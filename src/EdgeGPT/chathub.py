@@ -170,7 +170,7 @@ class ChatHub:
                         if (
                             (
                                 response["arguments"][0]["messages"][0]["contentOrigin"]
-                                != "Apology"
+                                != "Apology" and response["arguments"][0]["messages"][0]["contentOrigin"] != "DeepLeo"
                             )
                             and not draw
                             and not raw
